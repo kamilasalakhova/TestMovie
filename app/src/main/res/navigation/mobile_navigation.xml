@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_popular">
+
+    <fragment
+        android:id="@+id/navigation_top_rated"
+        android:name="com.example.movietestapp.screen.main.tabs.top_rated.TopRatedFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_top_rated" >
+        <action
+            android:id="@+id/action_navigation_top_rated_to_movieActivity"
+            app:destination="@id/movieActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_upcoming"
+        android:name="com.example.movietestapp.screen.main.tabs.upcoming.UpcomingFragment"
+        tools:layout="@layout/fragment_upcoming" >
+        <action
+            android:id="@+id/action_navigation_upcoming_to_movieActivity"
+            app:destination="@id/movieActivity"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_popular"
+        android:name="com.example.movietestapp.screen.main.tabs.popular.PopularFragment"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_navigation_popular_to_movieActivity"
+            app:destination="@id/movieActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/movieActivity"
+        android:name="com.example.movietestapp.screen.movie.MovieActivity"
+        android:label="activity_movie"
+        tools:layout="@layout/activity_movie"
+        app:action="android.intent.action.VIEW"
+        app:targetPackage="${applicationId}"
+        >
+        <argument
+            android:name="movie_id"
+            app:argType="integer" />
+    </activity>
+</navigation>

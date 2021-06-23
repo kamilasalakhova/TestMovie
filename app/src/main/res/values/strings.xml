@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MovieTestApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top rated</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="ok">OK</string>
+    <string name="biografy">Биография</string>
+    <string name="description">Обзор</string>
+    <string name="cast">В главных ролях</string>
+    <string name="budget">Бюджет</string>
+    <string name="genre">Жанр</string>
+    <string name="tagline">Слоган</string>
+    <string name="empty" />
+    <string name="place_of_birth">Место рождения</string>
+    <string name="known_for_department">Узнаваем по</string>
+    <string name="popularity">Популярность</string>
+    <string name="logo">Logo</string>
+    <string name="back">back</string>
+</resources>
